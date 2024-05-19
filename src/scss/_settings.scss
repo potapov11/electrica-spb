@@ -6,7 +6,7 @@
 
 .page {
   height: 100%;
-  font-family: var(--font-family, sans-serif);
+  // font-family: var(--font-family, sans-serif);
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
 }
@@ -26,6 +26,19 @@ img {
 
 a {
   text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .site-container {
@@ -75,11 +88,11 @@ a {
   clip: rect(0 0 0 0);
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 var(--container-offset);
-  max-width: var(--container-width);
-}
+// .container {
+//   margin: 0 auto;
+//   padding: 0 var(--container-offset);
+//   max-width: var(--container-width);
+// }
 
 .centered {
   text-align: center;

@@ -1,0 +1,17 @@
+.reason {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 6rem;
+
+  .reason__title-div {
+    background-image: url("../../img/svg/group-cable.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: bottom;
+    background-position-x: -20rem;
+    h2 {
+      font-size: 3.5rem;
+      text-align: center;
+    }
+  }
+}

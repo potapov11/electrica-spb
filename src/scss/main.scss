@@ -3,14 +3,12 @@
 @import "mixins";
 @import "fonts";
 @import "settings";
+@import "./base";
 
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/hero";
+@import "./components/reason";
+@import "./components/reason-list";
 
 // тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
-}

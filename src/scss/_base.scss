@@ -1,0 +1,16 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: $font-stem-light, sans-serif;
+  font-weight: 500;
+  line-height: 3rem;
+}
+
+.container {
+  width: 80vw; /* 80 * 16px = 1280px */
+  max-width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}

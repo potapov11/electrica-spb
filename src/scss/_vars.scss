@@ -2,7 +2,7 @@
 // colors
 :root {
   // base
-  --font-family: "Open Sans", sans-serif;
+  // --font-family: "stem", sans-serif;
   --content-width: 1170px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
@@ -10,3 +10,10 @@
   // colors
   --light-color: #fff;
 }
+
+$yellow-main: #ffe382;
+$yellow-second: #fedb60;
+$orange-main: #fb9850;
+$font-stem-light: "Stem Light", sans-serif;
+$font-stem-semilight: "Stem SemiLight", sans-serif;
+$font-stem-medium: "Stem Medium", sans-serif;

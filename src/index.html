@@ -1,20 +1,76 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
+  @include('partials/head.html')
 
-@include('partials/head.html')
-
-<body class="page__body">
-  <div class="site-container">
+  <body class="page__body">
     @include('partials/header.html')
     <main class="main">
-      <picture>
-        <source srcset="img/cover.webp" type="image/webp">
-        <img loading="lazy" src="img/cover.jpg" class="image" width="300" height="300" alt="Обложка канала MaxGraph">
-      </picture>
+      <div class="container">
+        <div class="hero">
+          <h1>
+            Монтаж проводки <br />и сборка электрощитов в Санкт-Петербурге
+          </h1>
+          <ul class="hero__list">
+            <li class="hero__list-item"><span> Разрабатываем проекты</span></li>
+            <li class="hero__list-item"><span> Прокладываем кабель</span></li>
+            <li class="hero__list-item"><span> Готовим документацию</span></li>
+            <li class="hero__list-item"><span> Собираем электрощиты</span></li>
+            <li class="hero__list-item">
+              <span> Выполняем монтаж заземления</span>
+            </li>
+          </ul>
+        </div>
+
+        <section class="reason">
+          <div class="reason__title-div">
+            <h2 class="reason__title">Когда к нам обращаются:</h2>
+          </div>
+          <div class="reason_group">
+            <ul class="reason-list">
+              <li class="reason-list__item">
+                Во время чернового ремонта в доме или офисе
+                <p class="reason-list__text">
+                  Рассчитываем безопасную нагрузку, прокладываем электрический
+                  кабель на этапе черновой отделки
+                </p>
+              </li>
+              <li class="reason-list__item">
+                После чистовой отделки и ремонта
+                <p class="reason-list__text">
+                  Устанавливаем фурнитуру, светильники и консоли управления
+                  тёплым полом, светом и другими устройствами
+                </p>
+              </li>
+              <li class="reason-list__item">
+                При строительстве жилых и коммерческих помещений
+                <p class="reason-list__text">
+                  Устанавливаем специальные датчики и подключаем их к умной
+                  колонке «Яндекса» и другим устройствам
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <!-- <h1>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo,
+          iure. Maxime facilis unde voluptas amet ratione repellendus
+          accusantium voluptatum neque, perspiciatis quasi corrupti minus
+          suscipit molestiae saepe culpa tenetur ut?
+        </h1>
+        <picture>
+          <source srcset="img/cover.webp" type="image/webp" />
+          <img
+            loading="lazy"
+            src="img/cover.jpg"
+            class="image"
+            width="300"
+            height="300"
+            alt="Обложка канала MaxGraph"
+          />
+        </picture> -->
     </main>
     @include('partials/footer.html')
     <!-- @include('html/h1.html') пример include -->
-  </div>
-</body>
-
+  </body>
 </html>

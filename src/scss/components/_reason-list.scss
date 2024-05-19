@@ -1,0 +1,22 @@
+.reason-list {
+  display: grid;
+  gap: 1.5rem;
+  list-style: none;
+
+  li {
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+
+    p {
+      font-size: 2rem;
+      padding-left: 2rem;
+      margin-top: 1rem;
+      font-weight: 400;
+    }
+  }
+
+  li:not(:last-child) {
+    border-bottom: 1px solid lightgray;
+  }
+}

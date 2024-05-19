@@ -1,1 +1,46 @@
 // ваш код
+.header {
+  padding: 1rem;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    // background-color: $yellow-main;
+    padding: 1rem 2rem;
+  }
+  &__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $yellow-main;
+    padding: 0.5rem 1rem;
+  }
+
+  &__logo-link {
+    font-size: 3.5rem;
+    font-family: $font-stem-medium;
+    text-transform: uppercase;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 90%;
+      position: absolute;
+      display: block;
+      background-color: #ffe382;
+      z-index: -1;
+      left: 5%;
+      rotate: -3deg;
+    }
+  }
+
+  &__price-link {
+    font-size: 3rem;
+    font-family: $font-stem-medium;
+    text-transform: uppercase;
+  }
+}

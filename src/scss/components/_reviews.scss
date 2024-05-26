@@ -1,0 +1,50 @@
+.reviews {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  background-color: #ec976ad1;
+}
+
+.reviews-item {
+  display: grid;
+  grid-template-columns: 35rem 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.reviews h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.reviews-info {
+  display: flex;
+}
+
+.reviews-desc {
+  padding: 20px 0;
+  border-bottom: 1px solid #ffe382;
+}
+
+.reviews-photo {
+  display: flex;
+  align-items: baseline;
+  width: 15rem;
+  height: 15rem;
+}
+
+.reviews-object {
+  flex-grow: 1;
+}
+
+.reviews-object p {
+  text-align: center;
+}
+
+.reviews-photo img {
+  border-radius: 50%;
+}
+
+.reviews-hous,
+.reviews-date {
+  font-weight: 600;
+}

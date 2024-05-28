@@ -31,6 +31,18 @@
   z-index: -1;
 }
 
+.questions__text::before {
+  position: absolute;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  top: 11px;
+  content: "";
+  display: block;
+  background-image: url("https://icon-library.com/images/bottom-arrow-icon/bottom-arrow-icon-27.jpg");
+  background-size: cover;
+}
+
 .questions__answer {
   font-size: 2rem;
   margin-top: 1rem;

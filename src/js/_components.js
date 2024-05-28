@@ -1,4 +1,5 @@
-console.log("components");
+import { openCloseAccordion } from "./components/open-close-accordion.js";
+openCloseAccordion();
 
 const swiper = new Swiper(".swiper", {
   // Optional parameters
@@ -26,11 +27,6 @@ const swiper = new Swiper(".swiper", {
     clickable: true,
     dynamicBullets: true,
   },
-
-  // And if we need scrollbar
-  // scrollbar: {
-  //   el: ".swiper-scrollbar",
-  // },
 });
 
 console.log(swiper);

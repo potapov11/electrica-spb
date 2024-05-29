@@ -8,6 +8,10 @@
   margin-bottom: 4rem;
 }
 
+.questions__item {
+  cursor: pointer;
+}
+
 .qeustions__list {
   list-style: none;
   display: grid;
@@ -54,5 +58,14 @@
 
 .qeustions__answer--show {
   height: 100%;
+  opacity: 1;
+}
+
+.visible,
+.invisible {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.visible {
   opacity: 1;
 }

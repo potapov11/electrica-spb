@@ -1,32 +1,20 @@
 import { openCloseAccordion } from "./components/open-close-accordion.js";
+import { initSwiper } from "./components/init-swiper.js";
+import "./components/animation-page.js";
+
+//Вызовы функций
 openCloseAccordion();
+initSwiper();
 
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  // direction: "vertical",
-  loop: true,
-  autoplay: {
-    delay: 3000, // Время (в миллисекундах) между переключениями слайдов
-    disableOnInteraction: false, // Продолжать автоматическое проигрывание после взаимодействия пользователя
-  },
+// const trigger = new ScrollTrigger();
+// // Add all html elements with attribute data-trigger
+// trigger.add("[data-trigger]");
 
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  slidesPerView: "auto",
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-});
-
-console.log(swiper);
+// Now in your CSS add the following classes, this fades the [data-trigger] elements in and out
+// .visible, .invisible {
+//   opacity: 0.0;
+//   transition: opacity 0.5s ease;
+// }
+// .visible {
+//   opacity: 1.0;
+// }

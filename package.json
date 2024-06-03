@@ -9,10 +9,10 @@
     "style-fix": "npx stylelint **/*.scss --fix",
     "code": "editorconfig-checker",
     "dev": "gulp",
-    "build": "npm run stylelint && npm run code && gulp build --build",
     "cache": "gulp cache",
     "backend": "gulp backend",
-    "zip": "gulp zip --build"
+    "zip": "gulp zip --build",
+    "build": "gulp build --build"
   },
   "author": "MaxGraph",
   "license": "ISC",

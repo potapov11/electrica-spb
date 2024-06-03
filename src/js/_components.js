@@ -71,6 +71,30 @@ function drag(e) {
 // В dragEnd проверяем, если перемещение по оси Y больше 100 пикселей, то добавляем класс modal__inactive, чтобы закрыть модальное окно. Иначе возвращаем высоту окна к 100%.
 // Таким образом, при перетаскивании шапки модального окна вниз, высота окна будет плавно уменьшаться, а при отпускании, если перемещение было достаточно большим, окно закроется.
 
+document.querySelector(".btn-send").addEventListener("click", async (e) => {
+  e.preventDefault();
+  let data = {
+    name: document.getElementById("name").value,
+    msg: document.getElementById("tel").value,
+  };
+
+  console.log(data);
+
+  let response = await fetch("mail.php", {
+    method: "POST",
+    body: JSON.stringify(data),
+    headers: {
+      "Content-Type": "application/json; charset=UTF-8",
+    },
+  });
+
+  console.log("click");
+
+  let result = await response.text();
+
+  alert(result);
+});
+
 //Вызовы функций
 openCloseAccordion();
 initSwiper();

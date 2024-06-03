@@ -8,12 +8,42 @@
   padding-top: 11rem;
   background-image: url("../../img/hero/hero-img.jpg");
   background-size: cover;
+
+  @include tablet {
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    height: 50rem;
+    background-color: rgb(146, 154, 166);
+    background-image: linear-gradient(
+      90deg,
+      rgba(146, 154, 166, 1) 0%,
+      rgba(146, 154, 166, 1) 25%,
+      rgba(183, 191, 201, 1) 100%
+    );
+  }
+
+  .br {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
   h1 {
     margin-bottom: 1.5rem;
     font-family: "Stem Light", sans-serif;
     font-size: 2.8rem;
     padding-left: 1.5rem;
-    color: black;
+    color: #000;
+
+    @include tablet {
+      width: 100%;
+      text-align: center;
+      font-size: 3rem;
+      line-height: 3.8rem;
+    }
   }
 
   ul {
@@ -26,7 +56,7 @@
       color: $yellow-main;
 
       span {
-        color: black;
+        color: #000;
       }
     }
   }

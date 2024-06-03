@@ -12,6 +12,10 @@
   width: 100%;
   height: 65rem;
 
+  @include tablet {
+    height: 100%;
+  }
+
   // height: 60rem;
 }
 
@@ -21,9 +25,8 @@
 
 .text-slider {
   position: absolute;
-  color: black;
   background-color: #b9ae90ed;
-  color: white;
+  color: #fff;
   width: 40%;
   font-size: 30px;
   padding: 20px;
@@ -37,7 +40,7 @@
 .swiper-button-next,
 .swiper-button-prev {
   transition: all 0.3s ease;
-  color: white;
+  color: #fff;
 }
 
 .swiper-button-next:hover,
@@ -45,6 +48,6 @@
   transform: scale(1.3);
 }
 
-.swiper-pagination-bullet {
-  color: white !important;
+.services-slider .swiper-pagination-bullet {
+  color: #fff;
 }

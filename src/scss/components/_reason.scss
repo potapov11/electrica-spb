@@ -3,12 +3,24 @@
   grid-template-columns: 1fr 1fr;
   padding-top: 9rem;
 
+  @include tablet {
+    grid-template-columns: initial;
+    gap: 40px;
+  }
+
   .reason__title-div {
     background-image: url("../../img/svg/group-cable.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: bottom;
     background-position-x: -20rem;
+
+    @include tablet {
+      background-size: cover;
+      background-position-y: -70px;
+      background-position-x: 30px;
+    }
+
     h2 {
       font-size: 3.5rem;
       text-align: center;

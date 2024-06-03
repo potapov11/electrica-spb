@@ -14,23 +14,25 @@ body {
 }
 
 .main::after {
-  position: absolute;
   content: "";
+  position: absolute;
   top: 0;
+  z-index: -1;
   display: block;
   width: 163%;
-  /* height: 100%; */
   height: 1100px;
   background-image: url("../../img/lines-decor/bmqq11.jpg");
-  background-size: cover;
-  z-index: -1;
   background-position-y: center;
+  background-size: cover;
   opacity: 0.3;
 }
 
 .container {
+  margin: 0 auto;
   width: 80vw; /* 80 * 16px = 1280px */
   max-width: 1400px;
-  // max-width: 100%;
-  margin: 0 auto;
+
+  @include tablet {
+    width: 90vw;
+  }
 }

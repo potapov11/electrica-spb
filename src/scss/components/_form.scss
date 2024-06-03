@@ -9,7 +9,7 @@
   top: 0;
   width: 160%;
   height: 849px;
-  background-image: url(../../img/lines-decor/indr29.jpg);
+  background-image: url("../../img/lines-decor/indr29.jpg");
   background-size: cover;
   z-index: -1;
   transform: rotate(45deg);
@@ -24,6 +24,10 @@
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
+
+  @include tablet {
+    width: 90%;
+  }
 }
 
 .login-box h2 {
@@ -48,6 +52,7 @@
   outline: none;
   background: transparent;
 }
+
 .login-box .user-box label {
   position: absolute;
   top: 0;

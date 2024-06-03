@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
   @include('partials/head.html')
-
   <body class="page__body">
     @include('partials/header.html')
     <main class="main">
       <div class="container">
         <div class="hero">
           <h1>
-            Монтаж проводки <br />и сборка электрощитов в Санкт-Петербурге
+            Монтаж проводки <br />и сборка электрощитов в <br class="br"/> Санкт-Петербурге
           </h1>
           <ul class="hero__list">
             <li class="hero__list-item"><span> Разрабатываем проекты</span></li>
@@ -20,7 +19,6 @@
             </li>
           </ul>
         </div>
-
         <section class="reason">
           <div class="reason__title-div">
             <h2 class="reason__title">Когда к нам обращаются:</h2>
@@ -105,11 +103,9 @@
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
-
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
           </div>
@@ -201,7 +197,6 @@
             <li class="questions__item">
               <p class="questions__text">Как быстро вы можете выполнить электромонтажные работы?</p>
               <p class="questions__answer">Срок выполнения работ зависит от их объема и сложности. Как правило, мы стараемся завершить большинство заказов в течение 3-5 рабочих дней. Однако в случае крупных или срочных проектов мы можем организовать ускоренные работы и сократить сроки. </p>
-
             </li>
             <li class="questions__item">
               <p class="questions__text"> Как часто нужно проводить проверку электрики в доме?</p>
@@ -219,11 +214,10 @@
         </div>
       </section>
       </section>
-      
       <div class="form">
         <div class="login-box">
           <h2>Оставьте ваши контакты и мы свяжемся</h2>
-          <form>
+          <form action="./resources/mail.php" method="post">
             <div class="user-box">
               <input type="text" name="" required="">
               <label>Ваше имя</label>
@@ -238,7 +232,6 @@
           </form>
         </div>
       </div>
-
       <section class="work-galery">
         <div class="container container-grid">
           <div class="normal photo photo-1">
@@ -280,6 +273,7 @@
     @include('partials/modal-form.html')
     @include('partials/footer.html')
     <!-- @include('html/h1.html') пример include -->
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
   </body>
 </html>

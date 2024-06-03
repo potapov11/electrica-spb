@@ -1,6 +1,11 @@
 .questions-padding {
   padding-top: 9rem;
   padding-bottom: 9rem;
+
+  @include tablet {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
 }
 
 .qeustions h2 {
@@ -21,7 +26,6 @@
 .questions__text {
   position: relative;
   font-size: 3.5rem;
-  // text-align: center;
 }
 
 .questions__text::after {
@@ -66,6 +70,7 @@
   opacity: 0;
   transition: opacity 0.5s ease;
 }
+
 .visible {
   opacity: 1;
 }

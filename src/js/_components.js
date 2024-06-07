@@ -10,11 +10,13 @@ btnPrice.addEventListener("click", () => {
   console.log("modal__inactive");
   modalForm.classList.remove("modal__inactive");
   modalForm.style = "";
+  document.body.style.overflow = "hidden";
 });
 
 btnClose.addEventListener("click", () => {
   console.log("modal__inactive");
   modalForm.classList.add("modal__inactive");
+  document.body.style.overflow = "";
 });
 
 const modal = document.querySelector(".modal");
@@ -63,6 +65,7 @@ function drag(e) {
 
     currentHeight = 100 - Math.abs(currentTranslate) / 2;
     modal.style.height = `${currentHeight}%`;
+    document.body.style.overflow = "";
   }
 }
 

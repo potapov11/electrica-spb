@@ -6,6 +6,8 @@
   align-items: baseline;
   height: 60rem;
   padding-top: 11rem;
+  padding-left: 10px;
+  padding-right: 10px;
   background-image: url("../../img/hero/hero-img.jpg");
   background-size: cover;
 
@@ -44,6 +46,11 @@
       font-size: 3rem;
       line-height: 3.8rem;
     }
+
+    @include mobile {
+      font-size: 2rem;
+      line-height: 2.8rem;
+    }
   }
 
   ul {
@@ -54,6 +61,10 @@
     li {
       font-size: 3rem;
       color: $yellow-main;
+
+      @include mobile {
+        font-size: 2.2rem;
+      }
 
       span {
         color: #000;

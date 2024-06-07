@@ -12,6 +12,7 @@ function initSwiper() {
     pagination: {
       el: ".swiper-pagination",
     },
+    // effect: "cube",
     slidesPerView: "auto",
 
     // Navigation arrows

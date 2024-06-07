@@ -3,6 +3,12 @@
   padding-bottom: 7rem;
 }
 
+.container-grid {
+  @include mobile {
+    grid-template-columns: initial;
+  }
+}
+
 .container-grid div {
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
 }

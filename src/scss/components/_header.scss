@@ -35,6 +35,11 @@
     position: relative;
     transition: transform 0.5s ease;
 
+    @include small-tablet {
+      left: -5%;
+      font-size: 1.5rem;
+    }
+
     &::before {
       content: "";
       width: 100%;
@@ -60,5 +65,10 @@
     font-size: 3rem;
     font-family: $font-stem-medium;
     text-transform: uppercase;
+
+    @include small-tablet {
+      font-size: 1.5rem;
+      border-radius: 10px;
+    }
   }
 }
